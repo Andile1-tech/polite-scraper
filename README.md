@@ -67,3 +67,15 @@ For example:
 
 ```text
 £51.77
+
+---
+
+## Author
+
+**Andile Mnikina**
+
+Backend AI Engineer | Python Developer
+
+Built as part of the FlyRank Backend Track assignment.
+
+GitHub: https://github.com/Andile1-tech
