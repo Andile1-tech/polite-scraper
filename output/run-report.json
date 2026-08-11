@@ -1,0 +1,16 @@
+{
+  "started_at": "2026-08-11T11:50:17.936417+00:00",
+  "duration_seconds": 21.174,
+  "pages_fetched": 60,
+  "cache_hits": 60,
+  "valid_records": 60,
+  "invalid_records": 0,
+  "failed_pages": 1,
+  "failures": [
+    {
+      "product_url": "https://books.toscrape.com/catalogue/fake-book-for-stage-5/index.html",
+      "source_page": "https://books.toscrape.com/catalogue/page-1.html",
+      "error": "Failed to fetch https://books.toscrape.com/catalogue/fake-book-for-stage-5/index.html: HTTP 404"
+    }
+  ]
+}
