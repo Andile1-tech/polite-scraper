@@ -1,4 +1,4 @@
-# The Polite Scraper
+﻿# The Polite Scraper
 
 A small, polite, cached Python web scraper built for the FlyRank Backend Track Week 5 assignment.
 
@@ -67,9 +67,82 @@ For example:
 
 ```text
 £51.77
-
 ```
 
+## How the Scraper Works
+
+The scraper follows this pipeline:
+
+Catalogue pages
+      |
+      v
+Cache / HTTP fetch
+      |
+      v
+Book URL discovery
+      |
+      v
+Individual book pages
+      |
+      v
+Data extraction
+      |
+      v
+Normalization
+      |
+      v
+Validation
+      |
+      v
+JSON output + run report
+
+## Target Classification
+
+[Books to Scrape](https://books.toscrape.com/)
+
+### Why This Site?
+
+Books to Scrape is a public demo website specifically created for practicing web scraping.
+
+It is therefore appropriate for this educational assignment.
+
+### Scope
+
+The scraper processes only the first three catalogue pages.
+
+Expected scope:
+
+- 3 catalogue pages
+- 60 discovered books
+- 60 unique product URLs
+
+The project intentionally keeps the scope small rather than crawling the entire website.
+
+## Record Schema
+
+Each normalized book record contains:
+
+- `title`
+- `product_url`
+- `price_text`
+- `price_gbp`
+- `availability_text`
+- `rating_text`
+- `description`
+- `source_page`
+- `fetched_at`
+
+## Politeness Rules
+
+The scraper uses:
+
+- a descriptive User-Agent
+- a 10-second request timeout
+- a delay between requests
+- local caching to avoid unnecessary repeat requests
+- retry handling for temporary server failures
+
+HTTP 403 and 404 responses are treated as non-retryable failures.
 
 ## Author
 
