@@ -68,9 +68,7 @@ For example:
 ```text
 £51.77
 
----
-
-
+```
 
 
 ## Author
